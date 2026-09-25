@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Hash de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="card">
+            <h1>🔐 Gerador de Hash</h1>
+
+            <p class="description">
+                Digite uma senha para gerar seu hash SHA-256.
+            </p>
+
+            <label for="password">Senha</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Digite sua senha..."
+                    autocomplete="off"
+                >
+
+                <button id="togglePassword" type="button">
+                    👁
+                </button>
+            </div>
+
+            <button id="generate" class="generate">
+                Gerar Hash
+            </button>
+
+            <label for="result">Hash SHA-256</label>
+
+            <textarea
+                id="result"
+                readonly
+                placeholder="O hash aparecerá aqui..."
+            ></textarea>
+
+            <div class="buttons">
+                <button id="copy" type="button">
+                    📋 Copiar
+                </button>
+
+                <button id="clear" type="button">
+                    🗑 Limpar
+                </button>
+            </div>
+
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
